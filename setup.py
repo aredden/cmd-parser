@@ -7,5 +7,7 @@ setup(
     description="Command parser for string argument parsing including unquoted string arguments.",
     author="Alex Redden",
     url="https://github.com/aredden/cmd-parse",
-    packages=find_packages(),
+    packages=["cmd_parser"],
+    package_dir={"cmd_parser": "cmd_parser"},
+    py_modules=["cmd_parser"],
 )

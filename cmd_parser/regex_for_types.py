@@ -100,7 +100,7 @@ class CommandParser:
             args_dict[self.remaining_text_destination] = prompt
         return args_dict
 
-    def add_command(self, name: str, cmd_type: CmdType, destination: str = None, default=None, default_factory=None):
+    def add_command(self, name: str, cmd_type: CmdType, destination: str = None, default=None):
         if cmd_type == self.cmdtypes.INT:
             self.commands.append(RegInt(name, destination, default=default))
         elif cmd_type == self.cmdtypes.FLOAT:
