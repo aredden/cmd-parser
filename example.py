@@ -1,21 +1,4 @@
-# cmd-parser
-
-### Description
-
-string-based command parser for parsing named flag commands from a given input string such as:
-
-```bash
-> cmd-name -arg1 value --arg2 12.0 --prompt I like this parser --etc 1 ...
-```
-
-and parsing them into an easy to use dictionary for easy access or processing.
-
-### Usage
-
-```py
-
 import random
-# Import command parser.
 from cmd_parser import CommandParser
 
 cmd = "a wizard wearing balenciaga fashion, highly detailed, bokeh, sigma 40mm -c 9 -2c 11 -neg blurry, low-resolution, messy, boring, jpeg-artifacts -3c 12.5"
@@ -52,10 +35,3 @@ print(arguments)
     "figures_only": False,
     "prompt": "a wizard wearing balenciaga fashion, highly detailed, bokeh, sigma 40mm",
 }
-
-```
-
-### install
-```bash
-python -m pip install git+https://github.com/aredden/cmd-parser.git
-```

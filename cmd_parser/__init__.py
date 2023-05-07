@@ -1,0 +1,1 @@
+from .regex_for_types import CommandParser, CmdType, RegexCommandType, RegexBool, RegFloat, RegInt, RegStr
